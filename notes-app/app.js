@@ -1,16 +1,13 @@
-// const name = require('./utils');
-// const add = require('./utils');
+const validator = require('validator');
 
-
-// const sum = add(2, 3);
-
-// console.log(name);
-// console.log(sum);
-
-
-// Challenge
 const getNotes = require('./notes');
 
 const message = getNotes();
 
 console.log(message);
+
+// Check Email
+console.log(validator.isEmail('dzulfikar.maulana@gmail.com'));
+
+// Check URL
+console.log(validator.isURL('https://www.google.com'));
