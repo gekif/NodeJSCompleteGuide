@@ -1,13 +1,9 @@
-const validator = require('validator');
+const chalk = require('chalk');
 
-const getNotes = require('./notes');
+const greenMessage = chalk.green('Success!');
+const greenBoldMessage = chalk.green.bold('Success!');
+const greenInverseBoldMessage = chalk.green.inverse.bold('Success!');
 
-const message = getNotes();
-
-console.log(message);
-
-// Check Email
-console.log(validator.isEmail('dzulfikar.maulana@gmail.com'));
-
-// Check URL
-console.log(validator.isURL('https://www.google.com'));
+console.log(greenMessage);
+console.log(greenBoldMessage);
+console.log(greenInverseBoldMessage);
