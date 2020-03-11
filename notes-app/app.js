@@ -1,6 +1,16 @@
-const fs = require('fs');
+// const name = require('./utils');
+// const add = require('./utils');
 
-// fs.writeFileSync('notes.txt', 'My Name is Fikar');
+
+// const sum = add(2, 3);
+
+// console.log(name);
+// console.log(sum);
+
 
 // Challenge
-fs.appendFileSync('notes.txt', '\nI live in jakarta');
+const getNotes = require('./notes');
+
+const message = getNotes();
+
+console.log(message);
